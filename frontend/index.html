@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cashback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sistema de Cashback</h1>
+            <p>Calcule seu Cashback e Acompanhe seu Histórico</p>
+        </header>
+
+        <main>
+            <section class="calculadora">
+                <h2>Calcular Cashback</h2>
+                <form id="formCashback">
+                    <div class="form-group">
+                        <label for="tipoCliente">Tipo de Cliente:</label>
+                        <select id="tipoCliente" required>
+                            <option value="COMUM">Comum</option>
+                            <option value="VIP">VIP</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="valor">Valor da Compra (R$):</label>
+                        <input type="number" id="valor" step="0.01" min="0.01" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cupom">Cupom de Desconto (%):</label>
+                        <input type="number" id="cupom" step="0.01" min="0" max="100" value="0">
+                    </div>
+
+                    <button type="submit">Calcular</button>
+                </form>
+
+                <div id="resultado" class="resultado hidden">
+                    <h3>Resultado</h3>
+                    <div class="resultado-detalhes">
+                        <p><strong>Valor Original:</strong> R$ <span id="valorOriginal">0.00</span></p>
+                        <p><strong>Desconto do Cupom:</strong> R$ <span id="descontoCupom">0.00</span></p>
+                        <p><strong>Valor Final:</strong> R$ <span id="valorFinal">0.00</span></p>
+                        <p class="cashback-final"><strong>Cashback:</strong> R$ <span id="cashbackFinal">0.00</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="historico">
+                <h2>Histórico de Consultas</h2>
+                <div id="mensagemHistorico" class="mensagem-info">
+                    Carregando histórico...
+                </div>
+                <table id="tabelaHistorico" class="hidden">
+                    <thead>
+                        <tr>
+                            <th>Data/Hora</th>
+                            <th>Tipo</th>
+                            <th>Valor</th>
+                            <th>Cashback</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpoHistorico">
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            <p>Desenvolvido para Desafio Técnico</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
