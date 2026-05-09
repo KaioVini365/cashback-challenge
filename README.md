@@ -24,7 +24,7 @@ Bônus VIP: Clientes VIP recebem 10% adicional sobre o cashback calculado`
 ## Como executar o projeto localmente
 
 1. Clone o repositório:
-`git clone https://github.com/seu-usuario/seu-repositorio.git`
+`git clone https://github.com/KaioVini365/cashback-challenge.git`
 
 2. Instale as dependências do Python:
 `pip install flask flask-cors psycopg2-binary python-dotenv`
