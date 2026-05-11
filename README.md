@@ -11,9 +11,9 @@ Um sistema full-stack leve e eficiente para cálculo e registro de cashback. Est
 ## Regras de Negócio
 - Cálculo de Cashback
 
-`Cashback Base: 5% sobre o valor final da compra (após descontos)
-Promoção: Dobro do cashback para compras acima de R$ 500,00
-Bônus VIP: Clientes VIP recebem 10% adicional sobre o cashback calculado`
+  `Cashback Base: 5% sobre o valor final da compra (após descontos)
+  Promoção: Dobro do cashback para compras acima de R$ 500,00
+  Bônus VIP: Clientes VIP recebem 10% adicional sobre o cashback calculado`
 
 ## Tecnologias Utilizadas
 - **Backend:** Python, Flask, Flask-CORS
